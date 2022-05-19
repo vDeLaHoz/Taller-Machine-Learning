@@ -117,7 +117,7 @@ print(f'Matriz de confusión: {confusion_matrix(y_test_out, y_pred)}')
 matriz_confusion = confusion_matrix(y_test_out, y_pred)
 plt.figure(figsize = (6, 6))
 sns.heatmap(matriz_confusion)
-plt.title("Mariz de confusión")
+plt.title("Matriz de confusión")
 
 # Metricas
 precision = precision_score(y_test_out, y_pred, average=None).mean()
@@ -128,6 +128,9 @@ print(f'Re-call: {recall}')
 
 f1 = f1_score(y_test_out, y_pred, average=None).mean()
 print(f'f1: {f1}')
+
+print(f'y real: {y_test_out}')
+print(f'y predicho: {y_pred}')
 
 
 # MAQUINA DE SOPORTE VECTORIAL
@@ -189,7 +192,7 @@ print(f'Matriz de confusión: {confusion_matrix(y_test_out, y_pred)}')
 matriz_confusion = confusion_matrix(y_test_out, y_pred)
 plt.figure(figsize = (6, 6))
 sns.heatmap(matriz_confusion)
-plt.title("Mariz de confusión")
+plt.title("Matriz de confusión")
 
 # Metricas
 precision = precision_score(y_test_out, y_pred, average=None).mean()
@@ -200,6 +203,9 @@ print(f'Re-call: {recall}')
 
 f1 = f1_score(y_test_out, y_pred, average=None).mean()
 print(f'f1: {f1}')
+
+print(f'y real: {y_test_out}')
+print(f'y predicho: {y_pred}')
 
 
 
@@ -262,7 +268,7 @@ print(f'Matriz de confusión: {confusion_matrix(y_test_out, y_pred)}')
 matriz_confusion = confusion_matrix(y_test_out, y_pred)
 plt.figure(figsize = (6, 6))
 sns.heatmap(matriz_confusion)
-plt.title("Mariz de confusión")
+plt.title("Matriz de confusión")
 
 # Metricas
 precision = precision_score(y_test_out, y_pred, average=None).mean()
@@ -273,6 +279,9 @@ print(f'Re-call: {recall}')
 
 f1 = f1_score(y_test_out, y_pred, average=None).mean()
 print(f'f1: {f1}')
+
+print(f'y real: {y_test_out}')
+print(f'y predicho: {y_pred}')
 
 
 # DecisionTreeRegressor
@@ -334,7 +343,7 @@ print(f'Matriz de confusión: {confusion_matrix(y_test_out, y_pred)}')
 matriz_confusion = confusion_matrix(y_test_out, y_pred)
 plt.figure(figsize = (6, 6))
 sns.heatmap(matriz_confusion)
-plt.title("Mariz de confusión")
+plt.title("Matriz de confusión")
 
 # Metricas
 precision = precision_score(y_test_out, y_pred, average=None).mean()
@@ -346,6 +355,8 @@ print(f'Re-call: {recall}')
 f1 = f1_score(y_test_out, y_pred, average=None).mean()
 print(f'f1: {f1}')
 
+print(f'y real: {y_test_out}')
+print(f'y predicho: {y_pred}')
 
 
 
@@ -398,7 +409,7 @@ print(f'accuracy de Entrenamiento de Entrenamiento: {np.array(acc_scores_train_t
 print(f'accuracy de Test de Entrenamiento: {np.array(acc_scores_test_train).mean()}')
 
 # Accuracy de Validación
-print(f'accuracy de Validación: {treeR.score(x_test_out, y_test_out)}')
+print(f'accuracy de Validación: {rf.score(x_test_out, y_test_out)}')
 
 # Matriz de confusión
 print('*'*50)
@@ -407,7 +418,7 @@ print(f'Matriz de confusión: {confusion_matrix(y_test_out, y_pred)}')
 matriz_confusion = confusion_matrix(y_test_out, y_pred)
 plt.figure(figsize = (6, 6))
 sns.heatmap(matriz_confusion)
-plt.title("Mariz de confusión")
+plt.title("Matriz de confusión")
 
 # Metricas
 precision = precision_score(y_test_out, y_pred, average=None).mean()
@@ -419,6 +430,5 @@ print(f'Re-call: {recall}')
 f1 = f1_score(y_test_out, y_pred, average=None).mean()
 print(f'f1: {f1}')
 
-
-
-
+print(f'y real: {y_test_out}')
+print(f'y predicho: {y_pred}')
